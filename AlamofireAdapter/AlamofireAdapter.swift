@@ -2,14 +2,14 @@ import Foundation
 import Alamofire
 import APIKit
 
-class AlamofireAdapter: SessionAdapterType {
-    let manager: Alamofire.Manager
+public class AlamofireAdapter: SessionAdapterType {
+    public let manager: Alamofire.Manager
 
-    init(manager: Alamofire.Manager) {
+    public init(manager: Alamofire.Manager) {
         self.manager = manager
     }
 
-    func resumedTaskWithURLRequest(URLRequest: NSURLRequest, handler: (NSData?, NSURLResponse?, NSError?) -> Void) -> SessionTaskType {
+    public func resumedTaskWithURLRequest(URLRequest: NSURLRequest, handler: (NSData?, NSURLResponse?, NSError?) -> Void) -> SessionTaskType {
         let request = Alamofire.request(URLRequest)
 
         request.responseData { response in
@@ -19,7 +19,7 @@ class AlamofireAdapter: SessionAdapterType {
         return request.task
     }
 
-    func getTasksWithHandler(handler: [SessionTaskType] -> Void) {
+    public func getTasksWithHandler(handler: [SessionTaskType] -> Void) {
         manager.session.getTasksWithCompletionHandler { dataTasks, uploadTasks, downloadTasks in
             let allTasks = dataTasks as [NSURLSessionTask]
                 + uploadTasks as [NSURLSessionTask]
