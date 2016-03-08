@@ -1,0 +1,2 @@
+github "ishkawa/APIKit" "feature/session-adapter"
+github "Alamofire/Alamofire" ~> 3.2.1

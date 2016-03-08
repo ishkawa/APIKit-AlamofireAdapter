@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7F5669DE1C8F215300F37D3D /* AlamofireAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F5669DD1C8F215300F37D3D /* AlamofireAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F9DB37A1C8F229C00D41C26 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DB0EB1C8F229C00D41C26 /* Alamofire.framework */; };
+		7F9DB37C1C8F229D00D41C26 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DB0ED1C8F229C00D41C26 /* APIKit.framework */; };
+		7F9DB37E1C8F229D00D41C26 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DB0EF1C8F229C00D41C26 /* Result.framework */; };
+		7F9DB6021C8F22DA00D41C26 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DB6011C8F22DA00D41C26 /* AlamofireAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F5669DA1C8F215300F37D3D /* AlamofireAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5669DD1C8F215300F37D3D /* AlamofireAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamofireAdapter.h; sourceTree = "<group>"; };
 		7F5669DF1C8F215300F37D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F9DB0EB1C8F229C00D41C26 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		7F9DB0ED1C8F229C00D41C26 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APIKit.framework; sourceTree = "<group>"; };
+		7F9DB0EF1C8F229C00D41C26 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
+		7F9DB6011C8F22DA00D41C26 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9DB37E1C8F229D00D41C26 /* Result.framework in Frameworks */,
+				7F9DB37C1C8F229D00D41C26 /* APIKit.framework in Frameworks */,
+				7F9DB37A1C8F229C00D41C26 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				7F5669DC1C8F215300F37D3D /* AlamofireAdapter */,
+				7F9DB0E21C8F229C00D41C26 /* Carthage */,
 				7F5669DB1C8F215300F37D3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,9 +59,36 @@
 			isa = PBXGroup;
 			children = (
 				7F5669DD1C8F215300F37D3D /* AlamofireAdapter.h */,
+				7F9DB6011C8F22DA00D41C26 /* AlamofireAdapter.swift */,
 				7F5669DF1C8F215300F37D3D /* Info.plist */,
 			);
 			path = AlamofireAdapter;
+			sourceTree = "<group>";
+		};
+		7F9DB0E21C8F229C00D41C26 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				7F9DB0E31C8F229C00D41C26 /* Build */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
+		7F9DB0E31C8F229C00D41C26 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				7F9DB0E41C8F229C00D41C26 /* iOS */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		7F9DB0E41C8F229C00D41C26 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7F9DB0EB1C8F229C00D41C26 /* Alamofire.framework */,
+				7F9DB0ED1C8F229C00D41C26 /* APIKit.framework */,
+				7F9DB0EF1C8F229C00D41C26 /* Result.framework */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +143,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7F5669D01C8F215300F37D3D;
 			productRefGroup = 7F5669DB1C8F215300F37D3D /* Products */;
@@ -130,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9DB6021C8F22DA00D41C26 /* AlamofireAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,26 +269,67 @@
 		7F5669E31C8F215300F37D3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/APIKit/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/APIKit/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/APIKit/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/APIKit/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = AlamofireAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.AlamofireAdapter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		7F5669E41C8F215300F37D3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/APIKit/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/APIKit/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/APIKit/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/APIKit/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Result/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = AlamofireAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -276,6 +358,7 @@
 				7F5669E41C8F215300F37D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
