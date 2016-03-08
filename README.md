@@ -1,2 +1,4 @@
-# APIKit-AlamofireAdapter
-Alamofire adapter for APIKit.Session.
+# :construction: APIKit-AlamofireAdapter :construction: 
+
+Alamofire adapter for `APIKit.Session` (alpha).
+
