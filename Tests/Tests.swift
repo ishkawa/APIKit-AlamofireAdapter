@@ -3,7 +3,26 @@ import APIKit
 import Alamofire
 import AlamofireAdapter
 
+
 class Tests: XCTestCase {
+    class StringDataParser: DataParserType {
+        enum Error: ErrorType {
+            case InvlidaData(NSData)
+        }
+
+        var contentType: String? {
+            return nil
+        }
+
+        func parseData(data: NSData) throws -> AnyObject {
+            guard let string = NSString(data: data, encoding: NSUTF8StringEncoding) else {
+                throw Error.InvlidaData(data)
+            }
+
+            return string
+        }
+    }
+
     struct ExampleRequest: RequestType {
         typealias Response = Void
 
@@ -19,10 +38,8 @@ class Tests: XCTestCase {
             return "/"
         }
 
-        var responseBodyParser: ResponseBodyParser {
-            return .Custom(acceptHeader: "*/*", parseData: { data in
-                return NSObject()
-            })
+        var dataParser: DataParserType {
+            return StringDataParser()
         }
 
         func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) throws -> Response {

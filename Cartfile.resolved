@@ -1,3 +1,3 @@
-github "Alamofire/Alamofire" "3.2.1"
-github "antitypical/Result" "1.0.2"
-github "ishkawa/APIKit" "0f6013d183e33755e135d99ebcd693ae43b7d968"
+github "Alamofire/Alamofire" "3.4.0"
+github "antitypical/Result" "2.0.0"
+github "ishkawa/APIKit" "cc2a04a3659a0bec821bf67c6645e3d7ea2406f6"
