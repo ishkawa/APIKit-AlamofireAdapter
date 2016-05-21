@@ -6,7 +6,7 @@ env:
     - LC_CTYPE=en_US.UTF-8
 
 install:
-  - carthage bootstrap --platform iOS
+  - carthage bootstrap
 
 script:
   - set -o pipefail
