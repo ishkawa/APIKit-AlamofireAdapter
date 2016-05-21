@@ -65,6 +65,6 @@ class Tests: XCTestCase {
             expectation.fulfill()
         }
 
-        waitForExpectationsWithTimeout(1.0, handler: nil)
+        waitForExpectationsWithTimeout(10.0, handler: nil)
     }
 }

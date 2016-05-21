@@ -1,2 +1,2 @@
-github "ishkawa/APIKit" "cc2a04a3659a0bec821bf67c6645e3d7ea2406f6"
+github "ishkawa/APIKit" ~> 2.0.0
 github "Alamofire/Alamofire" ~> 3.2.1
