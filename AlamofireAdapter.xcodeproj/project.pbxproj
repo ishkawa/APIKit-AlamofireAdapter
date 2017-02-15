@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0F00091E54B9C10073ED3B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DB0EB1C8F229C00D41C26 /* Alamofire.framework */; };
+		3F0F000A1E54B9C40073ED3B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DB0ED1C8F229C00D41C26 /* APIKit.framework */; };
+		3F0F000B1E54B9C70073ED3B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DB0EF1C8F229C00D41C26 /* Result.framework */; };
 		7F5669DE1C8F215300F37D3D /* AlamofireAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F5669DD1C8F215300F37D3D /* AlamofireAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F9DB37A1C8F229C00D41C26 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DB0EB1C8F229C00D41C26 /* Alamofire.framework */; };
-		7F9DB37C1C8F229D00D41C26 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DB0ED1C8F229C00D41C26 /* APIKit.framework */; };
-		7F9DB37E1C8F229D00D41C26 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DB0EF1C8F229C00D41C26 /* Result.framework */; };
 		7F9DB6021C8F22DA00D41C26 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DB6011C8F22DA00D41C26 /* AlamofireAdapter.swift */; };
 		7FAC40221C8F28970098C4B2 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC40211C8F28970098C4B2 /* Tests.swift */; };
 		7FAC40241C8F28970098C4B2 /* AlamofireAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5669DA1C8F215300F37D3D /* AlamofireAdapter.framework */; };
@@ -65,9 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F9DB37E1C8F229D00D41C26 /* Result.framework in Frameworks */,
-				7F9DB37C1C8F229D00D41C26 /* APIKit.framework in Frameworks */,
-				7F9DB37A1C8F229C00D41C26 /* Alamofire.framework in Frameworks */,
+				3F0F00091E54B9C10073ED3B /* Alamofire.framework in Frameworks */,
+				3F0F000A1E54B9C40073ED3B /* APIKit.framework in Frameworks */,
+				3F0F000B1E54B9C70073ED3B /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +212,7 @@
 				TargetAttributes = {
 					7F5669D91C8F215300F37D3D = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
 					};
 					7FAC401E1C8F28970098C4B2 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -405,6 +406,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -441,6 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.AlamofireAdapter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -500,6 +503,7 @@
 				7FAC40291C8F28970098C4B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

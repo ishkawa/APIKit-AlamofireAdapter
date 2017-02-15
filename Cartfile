@@ -1,2 +1,2 @@
-github "ishkawa/APIKit" ~> 2.0.0
-github "Alamofire/Alamofire" ~> 3.2.1
+github "ishkawa/APIKit" ~> 3.0
+github "Alamofire/Alamofire" ~> 4.3
